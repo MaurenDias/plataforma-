@@ -1,0 +1,471 @@
+/*GERAL*/
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #5271ff;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+ button:hover{
+    box-shadow: 0px 0px 8px white;
+    transform: scale(1.05);
+    color: white;
+}
+
+h2.titulo{
+    color: white;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span{
+    color: #5271ff;
+}
+
+body{
+    background-color: black;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+}
+
+/* CABEÇALHO */
+
+header{
+    padding: 40px 0%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color:#5271ff;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+ .btn-contato button:hover{
+    box-shadow: 0px 0px 8px white;
+}
+
+img{
+    max-width: 170px;
+}
+
+ /*TOPO DO SITE*/
+
+section .topo-do-site{
+    padding: 40px 5%;
+}
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+.topo-do-site h1{
+    color: white;
+    font-size: 42px;
+    line-height: 40px;
+}
+.topo-do-site h1 span{
+    color: #5271ff;
+}
+.topo-do-site .txt-topo-site p{
+    color: white;
+    margin: 40px 0px;
+}
+
+
+section .img-topo-site img{
+    max-width: 400px;
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+
+@keyframes flutuar{
+    0%{
+        topo: 0;
+    }
+    100%{
+        top:30px;
+    }
+}
+
+
+/*ESPECIALIDADES*/
+
+section.especial{
+    padding: 150px 4%;}
+
+    section.especial .flex{
+        gap: 60px;
+    }
+
+    .especial .especialidades-box{
+        color:white;
+        padding: 40px;
+        margin-top: 45px;
+        border-radius: 20px;
+        transition: 0.2s;
+    }
+
+
+    .especial .especialidades-box i{
+        font-size: 80px;
+        color: #5271ff;
+    }
+
+    .especial .especialidades-box h3{
+        font-size: 28px;
+        margin: 15px 0px;
+    }
+
+    .especial .especialidades-box:hover{
+        transform: scale(1.05);
+        box-shadow: 0 0 25px rgb(105, 103, 103);
+    }
+
+    /*SOBRE MIM*/
+
+    section.sobre{
+        padding: 80px 4%;
+    }
+
+    section.sobre .flex{
+        align-items: center;
+        gap: 60px;
+    }
+
+    .sobre .imagem-sobre{
+        max-width: 450px;
+    }
+
+    .sobre .txt-sobre{
+        color: white;
+    }
+
+    .sobre .txt-sobre h2{
+        font-size: 40px;
+        line-height: 40px;
+        margin-bottom: 30px;
+    }
+
+    .sobre .txt-sobre h2 span {
+        color: #5271ff;
+        display: block;
+    }
+
+    .sobre .txt-sobre p{
+        margin: 20px 0;
+        text-align: justify;
+    }
+
+    .btn-social button{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: none;
+        background-color: #5271ff;
+        font-size: 22px;
+        cursor: pointer;
+        margin: 0 0 5px;
+        transition: .2s;
+    }
+
+    /*PORTIFOLIO*/
+
+    section.portifolio{
+        padding: 80px 4%;
+        box-shadow: 0 1px 40px 10px rgba(255, 255, 255, 0.16);
+    }
+
+
+    .img-port{
+        width: 360px;
+        height: 460px;
+        background-size: cover;
+        background-position: 100% 0%;
+        transition: 8s;
+        cursor: pointer;
+        border-radius: 30px;
+        position: relative;
+    }
+
+    .img-port:hover{
+        background-position: 100% 100%;
+
+    }
+
+    section.portifolio .flex{
+        gap: 80px;
+        margin-top: 60px;
+    }
+
+    .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000000b6;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        font-weight: 600;
+        color: white;
+        opacity: 0;
+        transition: .5s;
+    }
+
+    .overlay:hover{
+        opacity: 1;
+    }
+
+    /*FALE COMIGO*/
+    section.formulario{
+        padding: 100px 4%;
+    }
+
+    form{
+        max-width: 500px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 40px;
+    }
+
+    form input, form textarea{
+        width: 100%;
+        background-color: rgb(53, 51, 51);
+        border: 0;
+        outline: 0;
+        padding: 20px 15px;
+        border-radius: 15px;
+        color: #fff;
+        font-size: 18px;
+    }
+
+    form textarea{
+    resize: none;
+    max-height: 200px;
+    }
+
+    form .btn-enviar{
+        margin-top: 20px;
+        text-align: center;
+
+    }
+
+    form .btn-enviar input{
+        width: 120px;
+        text-align: center;
+        background-color:#5271ff;
+        color: black;
+        font-weight: 900;
+        cursor: pointer;
+        font-size: 25px;
+        transition: .5s;
+    }
+
+    form .btn-enviar input:hover{
+        box-shadow: 0px 0px 8px white;
+    }
+
+    /* rodape */
+
+    footer{
+        padding: 40px 4%;
+        box-shadow: 0 1px 40px 10px rgba(255, 255, 255, 0.16);
+    }
+
+    footer .flex{
+        justify-content: space-between;
+    }
+
+    footer .line-footer{
+        padding: 20px 0;
+    }
+    .borda{
+        border-top: 2px solid #5271ff;
+    }
+
+    footer .line-footer p i{
+        color: #5271ff;
+        font-size: 22px;
+    }
+    footer .line-footer p a{
+        color: white;
+    }
+
+    /*responsivo*/
+
+    /*cabeçalho*/
+
+    @media screen and (max-width: 1020px){
+
+        .flex{
+            flex-direction: column;
+           
+        }
+
+        .topo-do-site .flex{
+            flex-direction: column-reverse;
+        }
+
+        .menu-desktop, .btn-contato{
+            display: none;
+        }
+
+        section.topo-do-site{
+            padding: 20px 10%;
+        }
+        section.topo-do-site .flex {
+            gap: 65px;
+        }
+
+        .topo-do-site h1{
+                font-size: 18px;
+                line-height: 30px;
+                letter-spacing: 2px;
+                text-decoration:underline #5271ff;
+            }
+               
+        section .img-topo-site img{
+                max-width: 300px;
+                position: relative;
+                animation: flutuar 2s ease-in-out infinite alternate;
+            }
+            
+              img{
+                  max-width: 150px;
+              }
+
+                h2.titulo{
+                    font-size: 35px;
+                }
+
+                section.especial{
+                    padding: 20px 4%;}   
+
+                    section.especial{
+                        padding: 10px 4%;}
+
+                        .especial .especialidades-box{
+                           padding: 10px 20%;
+                        }
+
+                        .especial .especialidades-box i{
+                            font-size: 60px;
+                            color: #5271ff;
+                        }
+
+                        section.especial .flex{
+                            gap: 10px;
+                        }
+
+                        .especial .especialidades-box:hover{
+                            transform: scale(1.05);
+                            box-shadow: 0 0 25px rgb(105, 103, 103);
+                        }
+
+                        .sobre .imagem-sobre{
+                            max-width: 350px;
+                        }
+                    
+                        .sobre .txt-sobre h2{
+                            font-size: 27px;
+                            line-height: 40px;
+                            margin-bottom: 30px;
+                            line-height: 28px;
+                        }
+                        .btn-social{
+                            text-align: center;
+                        }
+
+                        form{
+                            max-width: 350px;}
+
+                            form textarea{
+                                resize: none;
+                                max-height: 100px;
+                                }
+                                form input, form textarea{
+                                    font-size: 12px;
+                                    padding: 15px 15px;
+                                }
+
+                                section.formulario h2{
+                                   font-size: 25px;
+                                }
+
+                                form .btn-enviar input{
+                                    font-weight: 600;
+                                    max-width: 400px;
+                                    font-size: 20px;
+                                }
+
+                                form .btn-enviar{
+                                    margin-top: 10px;}
+
+                                    footer .flex{
+                                        flex-direction: column;
+                                        gap: 20px;
+                                    }
+                                
+                                    footer .line-footer{
+                                       text-align: center;}
+
+                                       .btn-social button{
+                                        width: 40px;
+                                        height: 40px;
+                                        font-size: 19px;
+                                    }
+
+                                    footer .line-footer .logo-footer img{
+                                        max-width: 90px;
+                                    }
+                
+        
+              }
